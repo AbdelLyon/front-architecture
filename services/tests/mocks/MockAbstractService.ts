@@ -1,5 +1,5 @@
 import { userSchema } from "../../../validators/validators";
-import AbstractQueryService from "../../queryService/AbstractQueryService";
+import AbstractQueryService from "../../QueryService";
 
 class MockAbstractService<T> extends AbstractQueryService<T> {
   constructor() {
