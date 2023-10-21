@@ -1,5 +1,5 @@
-import IMutationRepository from "../domain/ports/IMutationRepository";
-import Service from "./Service";
+import IMutationRepository from "../../domain/ports/IMutationRepository";
+import Service from "../Service";
 
 class MutationService<T> extends Service<T> implements IMutationRepository<T> {
   constructor(public baseURL: string, public pathname: string) {

@@ -1,14 +1,14 @@
 import { ReactElement } from "react";
-import { DataModel } from "@/core/models/DataModel";
 import Item from "../../app/posts/Item";
+import Post from "../../domain/models/Post";
 
-interface DataListProps<T extends DataModel> {
+interface DataListProps<T extends Post> {
   data: T[];
   path?: string;
   classNameContainer?: string;
 }
 
-export const List = <T extends DataModel>({
+export const List = <T extends Post>({
   data,
   path,
   classNameContainer,

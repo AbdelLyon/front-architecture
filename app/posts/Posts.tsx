@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 import Post from "@/domain/models/Post";
 import { useQuery } from "@tanstack/react-query";
 import { List } from "@/components/shared/List";
-import queryPost from "@/services/posts/QueryPostService";
+import queryPost from "@/services/memory/posts/QueryPostService";
 
 export const Posts = ({ posts }: { posts: Post[] }): ReactElement => {
   const { data, error, isLoading } = useQuery({

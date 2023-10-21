@@ -1,5 +1,5 @@
+import queryPost from "../../services/api/posts/QueryPostService";
 import { Posts } from "./Posts";
-import queryPost from "../../services/posts/QueryPostService";
 
 export default async function PostsPage() {
   const initialData = await queryPost.getAll();

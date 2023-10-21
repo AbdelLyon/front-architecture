@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
-import queryPost from "@/services/posts/QueryPostService";
+import queryPost from "@/services/memory/posts/QueryPostService";
 
 const PostDetails = () => {
   const { postId } = useParams();

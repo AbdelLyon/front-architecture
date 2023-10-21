@@ -1,5 +1,5 @@
-import IQueryRepository from "../domain/ports/IQueryRepository";
-import Service from "./Service";
+import IQueryRepository from "../../domain/ports/IQueryRepository";
+import Service from "../Service";
 
 abstract class QueryService<T>
   extends Service<T>

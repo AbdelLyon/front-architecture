@@ -1,5 +1,5 @@
 import Post from "@/domain/models/Post";
-import IQueryPostRepository from "@/domain/core/posts/QueryPost";
+import IQueryPostRepository from "@/domain/ports/IQueryPostRepository";
 import QueryData from "../Query";
 
 class QueryPost extends QueryData<Post> {

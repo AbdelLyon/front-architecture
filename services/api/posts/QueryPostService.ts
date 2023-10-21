@@ -1,7 +1,7 @@
 import Post from "@/domain/models/Post";
-import QueryService from "../QueryService";
 import QueryPost from "@/domain/core/posts/QueryPost";
 import IQueryPostRepository from "@/domain/ports/IQueryPostRepository";
+import QueryService from "../QueryService";
 
 // Constantes d'URL
 const API_URL = "https://jsonplaceholder.typicode.com";
@@ -15,7 +15,7 @@ class QueryPostService
     super(API_URL, API_PATH);
   }
 
-  public async searchPost(): Promise<Post[]> {
+  public async searchPosts(): Promise<Post[]> {
     try {
       const response = await this.api.get<Post[]>(this.pathname);
       return response.data;
