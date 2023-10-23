@@ -1,7 +1,7 @@
-interface Post {
-  id: string;
+import { Base } from "./Base";
+
+interface Post extends Base {
   title: string;
-  body: string;
 }
 
 export default Post;

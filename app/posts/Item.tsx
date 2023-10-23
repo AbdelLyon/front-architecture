@@ -12,7 +12,7 @@ import {
 } from "../../components/ui/avatar";
 import Link from "next/link";
 import Post from "../../domain/models/Post";
-
+import { Button } from "xefi-ui";
 interface PostProps<T> {
   item: T;
   path?: string;
@@ -32,6 +32,9 @@ const Item = <T extends Post>({ item, path }: PostProps<T>): ReactElement => {
         <CardContent>
           <p className="text-gray-600 mb-2">{item?.body}</p>
         </CardContent>
+        <CardHeader>
+          <Button>test</Button>
+        </CardHeader>
       </Card>
     </Link>
   );
