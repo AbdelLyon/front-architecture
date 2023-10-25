@@ -1,4 +1,4 @@
-import IQueryRepository from "../ports/IQueryRepository";
+import IQueryRepository from "../../ports/IQueryRepository";
 
 abstract class Query<T> {
   constructor(private repository: IQueryRepository<T>) {}

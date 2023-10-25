@@ -1,4 +1,4 @@
-import IMutationRepository from "../ports/IMutationRepository";
+import IMutationRepository from "../../ports/IMutationRepository";
 
 class Mutation<T> {
   constructor(private repository: IMutationRepository<T>) {}

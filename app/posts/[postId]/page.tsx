@@ -30,7 +30,7 @@ const PostDetails = () => {
         <CardTitle>{data?.title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-600 mb-2">{data?.body}</p>
+        <p className="mb-2">{data?.body}</p>
       </CardContent>
     </Card>
   );

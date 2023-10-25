@@ -12,7 +12,6 @@ import {
 } from "../../components/ui/avatar";
 import Link from "next/link";
 import Post from "../../domain/models/Post";
-import { Button } from "xefi-ui";
 interface PostProps<T> {
   item: T;
   path?: string;
@@ -21,7 +20,7 @@ interface PostProps<T> {
 const Item = <T extends Post>({ item, path }: PostProps<T>): ReactElement => {
   return (
     <Link href={`${path}/${item.id}`}>
-      <Card className="h-full">
+      <Card className="h-full hover:bg-accent transition-colors">
         <CardHeader>
           <Avatar className="mb-4">
             <AvatarImage src="https://github.com/shadcn.png" />
@@ -30,11 +29,8 @@ const Item = <T extends Post>({ item, path }: PostProps<T>): ReactElement => {
           <CardTitle>{item?.title}</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-600 mb-2">{item?.body}</p>
+          <p className="mb-2">{item?.body}</p>
         </CardContent>
-        <CardHeader>
-          <Button>test</Button>
-        </CardHeader>
       </Card>
     </Link>
   );
