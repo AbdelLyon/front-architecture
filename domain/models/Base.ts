@@ -1,5 +1,5 @@
 export interface Base {
-  id?: number;
+  id?: string;
   postId?: string;
   userId?: string;
   body: string;

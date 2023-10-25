@@ -1,7 +1,7 @@
 import IQueryRepository from "../../domain/ports/IQueryRepository";
 import Service from "../Service";
 
-abstract class QueryService<T extends { id: string }>
+abstract class QueryService<T extends { id?: string | undefined }>
   extends Service<T>
   implements IQueryRepository<T>
 {
